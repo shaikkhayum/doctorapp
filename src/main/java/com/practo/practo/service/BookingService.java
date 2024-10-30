@@ -1,7 +1,7 @@
 package com.practo.practo.service;
 
 
-import com.practo.practo.config.TimeSlotManager;
+
 import com.practo.practo.entity.Booking;
 import com.practo.practo.payload.BookingDto;
 import com.practo.practo.repository.BookRepository;
@@ -20,8 +20,6 @@ public class BookingService {
     @Autowired
     private BookRepository bookRepo;
 
-    @Autowired
-    private TimeSlotManager timeSlotManager;
 
     public void bookAnAppointment(BookingDto dto){
         List<String> availableTimeSlots = new ArrayList<>();
